@@ -12,13 +12,16 @@ namespace _6_11
         {
             Console.OutputEncoding = Encoding.UTF8;
             #region Class MonAn
+            //Class MonAn
             MonAn monAn1 = new MonAn("Phở bò",10,"có phở","phở");
 
             monAn1.inThongTin();
             Console.WriteLine("-----------------------------");
             #endregion
 
+
             #region Class SoThuc
+            //Class SoThuc
             SoThuc number1 = new SoThuc(-1.4);
             Console.WriteLine(number1.GiaTri);
             Console.WriteLine(number1.LaSoDuong);
@@ -41,7 +44,9 @@ namespace _6_11
             Console.WriteLine("------------------------------------------------");
             #endregion
 
+            
             #region Class Nguoi
+            // Class Nguoi
             DateTime day = new DateTime(2003,12,31);
             Nguoi nguoi1 = new Nguoi(1," Nguyen Tuan Dat DAS", day);
             Console.WriteLine($"nguoi1 có họ là {nguoi1.Ho}, đệm là {nguoi1.Dem}, tên là {nguoi1.Ten}");
