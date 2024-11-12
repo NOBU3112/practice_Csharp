@@ -29,7 +29,7 @@ namespace _6_11
             Console.WriteLine($"{MaSo} có tên là {HoTen} sinh ngày {NgaySinh.ToString("dd/MM/yyyy")}");
         }
 
-        public Nguoi(int maSo, string ht, DateTime ngaySinh) 
+        public Nguoi(int maSo, string ht, DateTime ngaySinh)
         {
             MaSo = maSo;
             hoTen = ht.Trim();
@@ -39,14 +39,12 @@ namespace _6_11
 
         public Nguoi()
         {
-            Console.WriteLine("Nhập vào mã số:");
-            MaSo = int.Parse(Console.ReadLine());
-            Console.WriteLine("Nhập vào họ tên:");
-            hoTen = Console.ReadLine();
-            Console.WriteLine("Nhập vào ngày sinh(tháng/ngày/năm):");
-            NgaySinh = DateTime.Parse(Console.ReadLine());
-            TachTen(HoTen);
-
+            MaSo = 0;
+            hoTen = "";
+            NgaySinh = new DateTime(2000,1,1);
+            Ho = "";
+            Dem = "";
+            Ten = "";
         }
 
         public void TachTen(string ht)

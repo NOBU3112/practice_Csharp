@@ -15,6 +15,12 @@ namespace _6_11
             get { return giaTri; }
             set { giaTri = value; LaSoDuong = giaTri > 0; }
         }
+
+        public SoThuc()
+        {
+            giaTri = 0;
+            LaSoDuong = false;
+        }
         public SoThuc(double gt) 
         {
             giaTri = gt;

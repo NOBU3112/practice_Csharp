@@ -21,6 +21,14 @@ namespace _6_11
             NguyenLieuChinh = nguyenLieuChinh;
         }
 
+        public MonAn()
+        {
+            TenMonAn = "";
+            GiaBan = 0;
+            GioiThieu = "";
+            NguyenLieuChinh = "";
+        }
+
         public void inThongTin()
         {
             Console.WriteLine("Món {0},{1}, được làm từ nguyên liệu chính {2}",TenMonAn,GioiThieu,NguyenLieuChinh);
